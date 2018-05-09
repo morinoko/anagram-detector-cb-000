@@ -10,6 +10,5 @@ class Anagram
     possible_anagrams.select do |possible_anagram|
       possible_anagram if @word.split("").sort == possible_anagram.split("").sort
     end
-    anagrams
   end
 end
