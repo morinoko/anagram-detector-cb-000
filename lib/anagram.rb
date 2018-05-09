@@ -10,6 +10,6 @@ class Anagram
     anagrams = possible_anagrams.map do |possible_anagram|
       possible_anagram if @word.split("").sort == possible_anagram.split("").sort
     end
-    anagrams.flatten
+    anagrams
   end
 end
